@@ -21,6 +21,7 @@ function App() {
           <Route exact path="/search">
             <Search />
           </Route>
+          <Route>404 - Not Found</Route>
         </Switch>
       </BrowserRouter>
     </ThemeProvider>
