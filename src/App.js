@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
 import GlobalStyles from './GlobalStyles';
+import Header from './components/Header';
 import theme from './theme';
 import './index.css';
 import Home from './components/Home';
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Normalize />
         <GlobalStyles />
+        <Header />
         <Switch>
           <Route exact path="/">
             <Home />
