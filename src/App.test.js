@@ -5,18 +5,19 @@ import userEvent from '@testing-library/user-event';
 import App from './App';
 
 describe('Header', () => {
-  test('logo link points to the correct page', () => {
+  const links = [{ name: /how it works/i }, { name: /about/i }];
+
+  test.each(links)('Check if Nav Bar have %s link.', (link) => {
     render(
       <MemoryRouter>
         <App />
       </MemoryRouter>,
     );
-    const link = screen.getByRole('link', { name: /Application logo/i });
-    screen.debug(link);
-    userEvent.click(link);
+    const linkDom = screen.getByRole('link', { name: link.name });
+    userEvent.click(linkDom);
 
     expect(
-      screen.getByRole('heading', { name: /This is the HomePage/i }),
+      screen.getByRole('heading', { name: link.name }),
     ).toBeInTheDocument();
   });
 });
