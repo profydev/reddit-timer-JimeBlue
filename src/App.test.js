@@ -20,4 +20,18 @@ describe('Header', () => {
       screen.getByRole('heading', { name: link.name }),
     ).toBeInTheDocument();
   });
+  test('Check if have logo and link to home page', () => {
+    render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>,
+    );
+
+    const link = screen.getByRole('link', { name: /Application Logo/i });
+    userEvent.click(link);
+
+    expect(link).toHaveAttribute('href', '/');
+
+    expect(screen.getByAltText(/Application Logo/)).toBeInTheDocument();
+  });
 });
