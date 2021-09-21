@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Logo from '../assets/logo.svg';
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
   padding: 0 5rem;
 
   @media screen and (max-width: 768px) {
@@ -13,7 +13,7 @@ const StyledHeader = styled.div`
 `;
 
 
-const Nav = styled.header`
+const Nav = styled.div`
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
