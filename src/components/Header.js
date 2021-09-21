@@ -12,7 +12,7 @@ const StyledHeader = styled.div`
   }
 `;
 
-const Nav = styled.div`
+const Nav = styled.header`
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
