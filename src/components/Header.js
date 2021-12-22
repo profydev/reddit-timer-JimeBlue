@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Logo from '../assets/logo.svg';
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
   padding: 0 5rem;
 
   @media screen and (max-width: 768px) {
@@ -55,9 +55,6 @@ const Menu = styled.div`
   padding-top: 0.406rem;
   marging-right: 1.188rem;
   } 
-
- 
-  
 
   @media screen and (max-width: 768px) {
     overflow: hidden;
