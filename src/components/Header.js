@@ -12,7 +12,6 @@ const StyledHeader = styled.header`
   }
 `;
 
-
 const Nav = styled.div`
   padding-top: 2rem;
   display: flex;
