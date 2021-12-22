@@ -56,9 +56,6 @@ const Menu = styled.div`
   marging-right: 1.188rem;
   } 
 
- 
-  
-
   @media screen and (max-width: 768px) {
     overflow: hidden;
     flex-direction: column;
