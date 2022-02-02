@@ -6,7 +6,6 @@ import Logo from '../assets/logo.svg';
 
 const StyledHeader = styled.header`
   padding: 0 5rem;
-
   @media screen and (max-width: 768px) {
     padding: 1.5rem 1rem;
   }
@@ -95,10 +94,10 @@ const Header = () => {
             <Link to="/search/javascript">Search</Link>
           </MenuLink>
           <MenuLink>
-            <Link to="/#how-it-works">How it works</Link>
+            <Link to="/how-it-works">How it works</Link>
           </MenuLink>
           <MenuLink>
-            <Link to="/#about">About</Link>
+            <Link to="/about">About</Link>
           </MenuLink>
         </Menu>
       </Nav>
