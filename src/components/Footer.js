@@ -57,7 +57,7 @@ const Footer = () => (
         </Link>
       </li>
       <li>
-        <Link to="/terms">Terms & Privacy</Link>
+        <Link to="/terms">Terms and Privacy</Link>
       </li>
     </ul>
   </StyledFooter>
