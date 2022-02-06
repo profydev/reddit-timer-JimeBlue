@@ -8,6 +8,7 @@ import './index.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import Search from './components/Search';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           </Route>
           <Route>404 - Not Found</Route>
         </Switch>
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   );
