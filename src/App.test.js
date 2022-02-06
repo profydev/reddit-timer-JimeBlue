@@ -13,6 +13,7 @@ describe('Header', () => {
         <App />
       </MemoryRouter>,
     );
+
     const linkDom = screen.getByRole('link', { name: link.name });
     userEvent.click(linkDom);
 
