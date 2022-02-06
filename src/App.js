@@ -31,7 +31,7 @@ function App() {
             <Search />
           </Route>
           <Route exact path="/terms">
-            <h1>Terms & Privacy</h1>
+            <h1>Terms and Privacy</h1>
           </Route>
           <Route>404 - Not Found</Route>
         </Switch>
